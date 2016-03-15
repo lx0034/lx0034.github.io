@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<!-- 样式表用link引入不进来，不知道怎么回事.. -->
-	<style>
+ 	<style>
 		body{
 			font:bold 15px "microsoft yahei";
 		}
@@ -139,35 +139,36 @@
 			</tr>
 		</table>
 		<aside>
-		<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-		<h3>侧栏注册窗口标题</h3>
+			<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+			<h3>侧栏注册窗口标题</h3>
 		</aside>
 		<form action="#">
-			请输入邮箱地址：<input type="email" placeholder="这是一个文本输入框" />
+			<label for="">请输入邮箱地址：</label>
+			<input type="email" placeholder="这是一个文本输入框" />
 			<p>邮箱地址请按要求格式输入</p>
-			请输入密码：
+			<label for="">请输入密码：</label>
 			<input type="password" placeholder="这是一个文本输入框" pattern="\w{6,16}" />
-			请重复输入密码：
+			<label for="">请重复输入密码：</label>
 			<input type="password" placeholder="这是一个文本输入框" pattern="\w{6,16}" />
 			<p>密码请为6-16位英文数字</p>
-			性别：
-			<input type="radio" name="sex" />男
-			<input type="radio" name="sex" />女
-			城市：
+			<label for="">性别：</label>
+			<input type="radio" name="sex" checked="checked"/><label for="">男</label>
+			<input type="radio" name="sex" /><label for="">女</label>
+			<label for="">城市：</label>
 			<select value="北京" id="city">
 				<option value="北京">北京</option>
 				<option value="上海">上海</option>
 				<option value="广州">广州</option>	
 			</select>
-			爱好：
-			<input type="checkbox" name="hobby" />运动
-			<input type="checkbox" name="hobby" />艺术
-			<input type="checkbox" name="hobby" />科学
-			个人描述：
+			<label for="hobby">爱好：</label>
+			<input type="checkbox" name="hobby" /><label for="">运动</label>
+			<input type="checkbox" name="hobby" /><label for="">艺术</label>
+			<input type="checkbox" name="hobby" /><label for="">科学</label>
+			<label for="discription">个人描述：</label>
 			<textarea name="discription" id="discription" cols="22" rows="2" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
 			<input type="submit" value="确认提交" />
 		</form>
-		<p>版权所有</p>
+		<p>版权所有©</p>
 	</article>
 </body>
 </html>
