@@ -1,0 +1,30 @@
+@charset "UTF-8"
+*{
+	margin:0;
+	padding:0;
+}
+#containter{
+	width:400px;
+	height:200px;
+	background-color:#ccc;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-100px -200px;
+	overflow: hidden;
+}
+#containter>div{
+	width:100px;
+	height:100px;
+	background-color:#fc0;
+	position:absolute;
+	border-radius:50%;
+}
+#left_top{
+	top:-50px;
+	left:-50px;
+}
+#right_bottom{
+	bottom:-50px;
+	right:-50px;
+}
