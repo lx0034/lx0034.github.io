@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 样式表用link引入不进来，不知道怎么回事.. -->
+ 	<style>
+	 	*{
+	 		margin:0;
+	 		padding:0;
+	 	}
+		body{
+			font:bold 14px/26px "microsoft yahei";
+			background: #dedede;
+		}
+		img{
+			width:300px;
+			height:242px;
+		}
+		header{
+			width:100%;
+			height:60px;
+			position:relative;
+			background-color:#333;
+		}
+		header>h1{
+			position:absolute;
+			top:10px;
+			left:40px;
+			width:117px;
+			height:38px;
+			background:url(imgs/2.png) no-repeat;
+		}
+		header>ul{
+			float:right;
+			margin:20px 20px 0 0;
+		}
+		header>ul>li{
+			float: left;
+			margin-left:22px;
+		}
+		header>ul>li>a{
+			color:#fff;
+			text-decoration: none;
+		}
+		article{
+			width:1240px;
+			background:#fff;
+			margin:20px auto;
+			padding:40px 20px;
+			border:1px solid #cdcdcd;
+		}
+		h2{
+			color:#73767b;
+			font:bold 16px/35px "microsoft yahei";
+		}
+		address{
+			color:#73767b;
+		}
+		p{
+			margin:20px 0 0 0;
+			text-indent: 2em;
+		}
+		img{
+			margin-top: 20px;
+		}
+		#art2>ul{
+			list-style: none;
+		}
+		#art3>figure{
+			width:120px;
+			height:124px;
+			text-align: center;
+			border:1px solid #cdcdcd;
+			margin:15px 0 15px 40px;
+		}
+		#art3>figure>img{
+			width:100px;
+			height:80px;
+			margin-top:8px;
+		}
+		#art4>ol{
+			margin-left:4em;
+		}
+		#art4>table{
+			width:100%;
+			border-collapse:collapse;
+			border-top:1px solid #cdcdcd;
+			border-left:1px solid #cdcdcd;
+		}
+		#art4>table td{
+			border-right:1px solid #cdcdcd;
+			border-bottom: 1px solid #cdcdcd;
+		}
+		#art4>table tr:first-child{
+			color:#fff;
+			background-color: #333;
+		}
+		#art4>table tr:last-child{
+			background-color: #ccc;
+		}
+		#art5{
+			margin:40px auto 20px auto;
+		}
+		#art5 h2{
+			color:#000;
+		}
+		#art5>form{
+			text-align: center;
+		}
+		#art5>form>div{
+			margin:20px 0 10px 0;
+		}
+		#art5>form>div>p{
+			color:#9fa2a7;
+			margin:0;
+		}
+		input[type="submit"]{
+			width:1176px;
+			height:38px;
+			color:#fff;
+			font:bold 14px "microsoft yahei";
+			background-color:#3355d0;
+			border-radius:6px;
+		}
+		footer{
+			width:100%;
+			height:70px;
+			line-height:70px;
+			color:#fff;
+			text-align: center;
+			background-color:#000;
+		}
+	</style>  
+	<!-- HTML5新标签兼容IE -->
+	<script src="js/html5shiv.js"></script>
+</head>
+<body>
+
+	<header>
+		<h1></h1>
+		<ul>
+			<li><a href="#">导航链接一</a></li>
+			<li><a href="#">导航链接二</a></li>
+			<li><a href="#">导航链接三</a></li>
+			<li><a href="#">导航链接四</a></li>
+		</ul>
+	</header>
+
+	<article id="art1">
+		<hgroup>
+			<h1>文章一级标题</h1>
+			<h2>文章二级标题</h2>
+		</hgroup>
+		<address>
+			文章作者
+			<time>文章发表时间</time> 
+		</address>
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<br />换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+		<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+	</article>
+
+	<article id="art2">
+		<hgroup>
+			<h1>另一篇文章一级标题</h1>
+			<h2>文章二级标题</h2>
+		</hgroup>
+		<address>
+		文章作者
+		<time>文章发表时间</time>
+		</address>
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<br />换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+		<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		<ul>
+			<li>列表项目一</li>
+			<li>列表项目二</li>
+			<li>列表项目三</li>
+		</ul>
+	</article>
+
+	<article id="art3">
+		<h1>图片</h1>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="imgs/1.png" alt="好看的图片" title="好看的图片" />
+		</figure>
+	</article>
+
+	<article id="art4">
+		<hgroup>
+			<h1>最后一篇文章一级标题</h1>
+			<h2>文章二级标题</h2>
+		</hgroup>
+		<address>
+			文章作者
+			<time>文章发表时间</time>
+		</address>
+		<ol>
+			<li>排名1</li>
+			<li>排名2</li>
+			<li>排名3</li>
+		</ol>
+		<p>下面是一个表格，给表格添加了一个border=“1”好让你看出是一个表格</p>
+		<table>
+			<tr>
+				<td>表头</td>
+				<td>表头</td>
+				<td>表头</td>
+			</tr>
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr>
+				<td>总计</td>
+				<td colspan="2">1000</td>
+			</tr>
+		</table>
+	</article>
+
+	<article id="art5">
+		<aside>
+			<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+		</aside>
+		<form action="#">
+			<div>
+				<label for="">请输入邮箱地址：</label>
+				<input type="email" placeholder="这是一个文本输入框" />
+				<p>邮箱地址请按要求格式输入</p>
+			</div>
+				
+			<div>
+				<label for="">请输入密码：</label>
+				<input type="password" placeholder="这是一个文本输入框" pattern="\w{6,16}" /><br />	
+				<label for="">请重复输入密码：</label>
+				<input type="password" placeholder="这是一个文本输入框" pattern="\w{6,16}" />
+				<p>密码请为6-16位英文数字</p>				
+			</div>
+
+			<div>
+				<label for="">性别：</label>
+				<input type="radio" name="sex" /><label for="">男</label>
+				<input type="radio" name="sex" /><label for="">女</label>
+			<br />
+			<label for="">城市：</label>
+				<select value="北京" id="city">
+					<option value="北京">北京</option>
+					<option value="上海">上海</option>
+					<option value="广州">广州</option>	
+				</select>
+				<br />
+				<label for="hobby">爱好：</label>
+				<input type="checkbox" name="hobby" /><label for="">运动</label>
+				<input type="checkbox" name="hobby" /><label for="">艺术</label>
+				<input type="checkbox" name="hobby" /><label for="">科学</label>
+				<br />
+				<label for="discription">个人描述：</label>
+				<textarea name="discription" id="discription" cols="100" rows="5" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+			</div>
+		
+			<input type="submit" value="确认提交" />
+		</form>
+	</article>
+
+	<footer>版权所有</footer>
+	
+</body>
+</html>
